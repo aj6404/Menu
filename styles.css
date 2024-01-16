@@ -1,0 +1,216 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f7f7f7; /* Light background for the content */
+}
+
+header {
+    background-color: #2c3e50; /* Darker shade for header and footer */
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.center-menu {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-menu h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px; /* Add space below the navigation */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: block;
+    color: #ecf0f1;
+    background-color: #3498db; /* Bright color for the links */
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #2980b9; /* Darker shade on hover/focus */
+    transform: translateY(-2px); /* Slight lift on hover/focus */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1em 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+label, input[type="text"], input[type="email"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+nav ul li.home-link {
+    float: left; /* Align the home link to the left */
+    margin-right: auto; /* Push everything else to the right */
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+label, input[type="text"], input[type="email"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+footer p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Adjusting column widths */
+th:nth-child(1), td:nth-child(1) { /* Employee ID */
+    width: 10%;
+}
+
+th:nth-child(2), td:nth-child(2), /* First Name */
+th:nth-child(3), td:nth-child(3), /* Middle Name */
+th:nth-child(4), td:nth-child(4) { /* Last Name */
+    width: 15%;
+}
+
+th:nth-child(5), td:nth-child(5) { /* Email */
+    width: 25%; /* More space for Email */
+}
+
+th:nth-child(6), td:nth-child(6) { /* State */
+    width: 10%;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
